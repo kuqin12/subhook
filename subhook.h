@@ -35,6 +35,9 @@
 #elif defined _M_AMD64 || __amd64__
   #define SUBHOOK_X86_64
   #define SUBHOOK_BITS 64
+#elif defined _M_ARM64 || __aarch64__
+  #define SUBHOOK_AARCH64
+  #define SUBHOOK_BITS 64
 #else
   #error Unsupported architecture
 #endif
